@@ -37,3 +37,27 @@ RETURN n
 MATCH (player:PLAYER)
 WHERE player.height >=2 RETURN player
 ```
+
+**Pagination**
+
+```
+MATCH (player:PLAYER)
+WHERE player.height >=2 RETURN player
+SKIP 0
+LIMIT 5
+```
+
+**Sort order**
+
+```
+MATCH (player:PLAYER)
+WHERE player.height >=2 RETURN player
+ORDER BY player.height DESC
+```
+
+**Match multi node filter**
+
+```
+MATCH (player:PLAYER), (coach:COACH)
+RETURN player, coach
+```
