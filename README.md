@@ -133,3 +133,7 @@ MATCH (players) -[contract:PLAYS_FOR]-> (teamM:TEAM)
 WHERE contract.salary >=4000000
 RETURN players;
 ```
+
+### Graph Database Modeling.
+
+Hyperedge -
